@@ -1,327 +1,464 @@
-2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.stream-buffer-size
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.invalidate.work.pct.per.iteration
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.container-executor.class
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.multipart.purge.age
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.scheduler.client.thread-count
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.top.enabled
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.shuffle.log.separate
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.low-watermark
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.fast.buffer.size
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.user.group.static.mapping.overrides
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.maximum.data.length
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for tfile.fs.input.buffer.size
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.cached.conn.retry
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.authentication.type
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.list.encryption.zones.num.responses
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.map.cpu.vcores
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.path.based.cache.refresh.interval.ms
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.decommission.interval
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.fs-limits.max-directory-items
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.zk-retry-interval-ms
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ftp.bytes-per-checksum
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.ha.log-roll.period
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.user.home.dir.prefix
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.client.fallback-to-simple-auth-allowed
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.pmem-check-enabled
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.remote-app-log-dir
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.inotify.max.events.per.rpc
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.profile.maps
-  2017-06-30 14:47:55,780 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.shuffle.ssl.file.buffer.size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.tasktracker.healthchecker.script.timeout
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.webapp.https.address
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.resource.percentage-physical-cpu-limit
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.am.command-opts
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.fs-limits.max-xattr-size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.http.address
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.amlauncher.thread-count
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.blocks.per.postponedblocks.rescan
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.nm.uploader.replication.factor
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.zk.root
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.jetty.logs.serve.aliases
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.client.failover-proxy-provider
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.admin.acl
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.reducer.unconditional-preempt.delay.sec
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.cross-origin.max-age
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.am.hard-kill-timeout-ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.remote-app-log-dir-suffix
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.principal
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.webapp.address
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.recovery.enable
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.store.in-memory.check-period-mins
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for nfs.mountd.port
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.merge.inmem.threshold
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.df.interval
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.enabled
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobtracker.jobhistory.lru.cache.size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.cross-origin.allowed-headers
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.profile
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.output.key.class
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.hostname
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.num.checkpoints.retained
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.queuename
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.max-age-ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.token.tracking.ids.enabled
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.localizer.client.thread-count
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.uploader.server.thread-count
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.mmap.retry.timeout.ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.move.thread-count
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.permissions.enabled
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.blockreport.split.threshold
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.AbstractFileSystem.hdfs.impl
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.balance.bandwidthPerSec
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.block.scanner.volume.bytes.per.second
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.filter.initializers
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.http-authentication.simple.anonymous.allowed
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.client.rpc-timeout.ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.default.chunk.view.size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.client-server.thread-count
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.resource-tracker.address
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.working.dir
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.datestring.cache.size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.profile.params
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.decommission.blocks.per.interval
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.handler.count
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.image.transfer.bandwidthPerSec
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for rpc.metrics.quantile.enable
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobtracker.expire.trackers.interval
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.timeout
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.client.max-retries
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.resource.memory-mb
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.disk-health-checker.min-healthy-disks
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.failed.volumes.tolerated
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.handler-thread-count
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.server.listen.queue.size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.threads.max
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.connect.max-wait.ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.fileoutputcommitter.algorithm.version
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.framework.name
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.map.skip.proc.count.autoincr
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.max.split.locations
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.scheduler.class
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.system-metrics-publisher.enabled
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.blocksize
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.nested-level
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.shuffle.connection-keep-alive.enable
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.threads.keepalivetime
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.connection.timeout
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for file.client-write-packet-size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ha.failover-controller.cli-check.rpc-timeout.ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ha.zookeeper.acl
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.write.stale.datanode.ratio
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.encrypt.data.transfer
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.client.ping
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.shared.file.descriptor.paths
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.input.lineinputformat.linespermap
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.delayed.delegation-token.removal-interval-ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.localizer.fetch.thread-count
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.failover.max.attempts
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.scheduler.address
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.webapp.cross-origin.enabled
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.read.shortcircuit.streams.cache.expiry.ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.leveldb-timeline-store.start-time-write-cache-size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.health-checker.script.timeout-ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.fs.state-store.num-retries
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.ssl.require.client.cert
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.uid.cache.secs
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.keytab
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.read.shortcircuit.skip.checksum
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.ha.automatic-failover.zk-base-path
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.shuffle.ssl.enabled
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.log.level
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.rm.enabled
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.tasktracker.dns.interface
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.system-metrics-publisher.dispatcher.pool-size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.speculative.speculative-cap-running-tasks
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.block.id.layout.upgrade.threads
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.use.datanode.hostname
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.context
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.ha.enabled
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapred.reducer.new-api
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.delegation.token.renew-interval
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.blockreport.intervalMsec
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.multipart.threshold
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.cross-origin.enabled
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.shuffle.memory.limit.percent
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.https.server.keystore.resource
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for io.map.index.skip
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.hdfs-servers
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobtracker.taskscheduler
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.kerberos.internal.spnego.principal
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.state-store.max-completed-applications
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.map.output.compress
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.num.refill.threads
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3n.multipart.uploads.block.size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.merge.progress.records
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.dns.interface
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for map.sort.class
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.aux-services.mapreduce_shuffle.class
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for tfile.fs.output.buffer.size
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.du.interval
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.failover.connection.retries
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.top.window.num.buckets
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.dir
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.buffer.dir
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.shuffle.retry-delay.max.ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.uploader.server.address
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.client.progressmonitor.pollinterval
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.shuffle.log.limit.kb
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.max.locked.memory
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.retrycache.expirytime.millis
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.scan.period.hours
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.best-effort
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.move.interval-ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.ha.fencing.ssh.connect-timeout
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.fs-limits.max-component-length
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.zk.quorum
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.cross-origin.allowed-origins
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.enable.retrycache
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.du.reserved
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.state-store-class
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.ipc.address
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.system.acls
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.policy
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.path.based.cache.retry.interval.ms
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.crypto.cipher.suite
-  2017-06-30 14:47:55,781 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.ha.tail-edits.period
-  2017-06-30 14:47:55,793 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.profile.reduce.params
-  2017-06-30 14:47:55,793 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.generic-application-history.max-applications
-  2017-06-30 14:47:55,793 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.jaas.context
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.hostname
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.memory.mb
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.group
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.authentication.kerberos.principal
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.user
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.edits.dir
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.client.failover-retries-on-socket-timeouts
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.decommission.max.concurrent.tracked.nodes
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.client.completion.pollinterval
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.name.dir.restore
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.secondary.http-address
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.recovery.store.leveldb.path
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.store.class
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for s3.bytes-per-checksum
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.windows-container.cpu-limit.enabled
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.webapp.https.address
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.vmem-pmem-ratio
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.checkpoint.period
-  2017-06-30 14:47:55,794 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.ha.automatic-failover.enabled
-  2017-06-30 14:47:55,971 INFO [org.apache.hadoop.mapreduce.Job] - The url to track the job: http://localhost:8080/
-  2017-06-30 14:47:55,982 INFO [org.apache.hadoop.mapred.LocalJobRunner] - OutputCommitter set in config null
-  2017-06-30 14:47:55,982 INFO [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - File Output Committer Algorithm version is 1
-  2017-06-30 14:47:55,984 INFO [org.apache.hadoop.mapred.LocalJobRunner] - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
-  2017-06-30 14:47:56,016 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Starting mapper thread pool executor.
-  2017-06-30 14:47:56,016 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Max local threads: 1
-  2017-06-30 14:47:56,016 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Map tasks to process: 2
-  2017-06-30 14:47:56,033 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Waiting for map tasks
-  2017-06-30 14:47:56,038 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Starting task: attempt_local1514748184_0002_m_000000_0
-  2017-06-30 14:47:56,038 DEBUG [org.apache.hadoop.mapred.SortedRanges] - currentIndex 0   0:0
-  2017-06-30 14:47:56,044 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - mapreduce.cluster.local.dir for child : /tmp/hadoop-hadoop/mapred/local/localRunner//hadoop/jobcache/job_local1514748184_0002/attempt_local1514748184_0002_m_000000_0
-  2017-06-30 14:47:56,084 DEBUG [org.apache.hadoop.mapred.Task] - using new api for output committer
-  2017-06-30 14:47:56,084 INFO [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - File Output Committer Algorithm version is 1
-  2017-06-30 14:47:56,084 INFO [org.apache.hadoop.mapred.Task] -  Using ResourceCalculatorProcessTree : [ ]
-  2017-06-30 14:47:56,086 INFO [org.apache.hadoop.mapred.MapTask] - Processing split: file:/usr/local/hadoop/file/pre.txt:0+32
-  2017-06-30 14:47:56,092 DEBUG [org.apache.hadoop.mapred.MapTask] - Trying map output collector class: org.apache.hadoop.mapred.MapTask$MapOutputBuffer
-  2017-06-30 14:47:56,409 INFO [org.apache.hadoop.mapred.MapTask] - (EQUATOR) 0 kvi 26214396(104857584)
-  2017-06-30 14:47:56,417 INFO [org.apache.hadoop.mapred.MapTask] - mapreduce.task.io.sort.mb: 100
-  2017-06-30 14:47:56,417 INFO [org.apache.hadoop.mapred.MapTask] - soft limit at 83886080
-  2017-06-30 14:47:56,417 INFO [org.apache.hadoop.mapred.MapTask] - bufstart = 0; bufvoid = 104857600
-  2017-06-30 14:47:56,417 INFO [org.apache.hadoop.mapred.MapTask] - kvstart = 26214396; length = 6553600
-  2017-06-30 14:47:56,436 INFO [org.apache.hadoop.mapred.MapTask] - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
-  2017-06-30 14:47:56,472 INFO [org.apache.hadoop.mapred.LocalJobRunner] - 
-  2017-06-30 14:47:56,472 INFO [org.apache.hadoop.mapred.MapTask] - Starting flush of map output
-  2017-06-30 14:47:56,479 INFO [org.apache.hadoop.mapred.MapTask] - Spilling map output
-  2017-06-30 14:47:56,480 INFO [org.apache.hadoop.mapred.MapTask] - bufstart = 0; bufend = 32; bufvoid = 104857600
-  2017-06-30 14:47:56,480 INFO [org.apache.hadoop.mapred.MapTask] - kvstart = 26214396(104857584); kvend = 26214368(104857472); length = 29/6553600
-  2017-06-30 14:47:56,489 INFO [org.apache.hadoop.mapred.MapTask] - Finished spill 0
-  2017-06-30 14:47:56,502 INFO [org.apache.hadoop.mapred.Task] - Task:attempt_local1514748184_0002_m_000000_0 is done. And is in the process of committing
-  2017-06-30 14:47:56,524 INFO [org.apache.hadoop.mapred.LocalJobRunner] - map
-  2017-06-30 14:47:56,524 INFO [org.apache.hadoop.mapred.Task] - Task 'attempt_local1514748184_0002_m_000000_0' done.
-  2017-06-30 14:47:56,533 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Finishing task: attempt_local1514748184_0002_m_000000_0
-  2017-06-30 14:47:56,533 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Starting task: attempt_local1514748184_0002_m_000001_0
-  2017-06-30 14:47:56,533 DEBUG [org.apache.hadoop.mapred.SortedRanges] - currentIndex 0   0:0
-  2017-06-30 14:47:56,540 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - mapreduce.cluster.local.dir for child : /tmp/hadoop-hadoop/mapred/local/localRunner//hadoop/jobcache/job_local1514748184_0002/attempt_local1514748184_0002_m_000001_0
-  2017-06-30 14:47:56,561 DEBUG [org.apache.hadoop.mapred.Task] - using new api for output committer
-  2017-06-30 14:47:56,561 INFO [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - File Output Committer Algorithm version is 1
-  2017-06-30 14:47:56,561 INFO [org.apache.hadoop.mapred.Task] -  Using ResourceCalculatorProcessTree : [ ]
-  2017-06-30 14:47:56,572 INFO [org.apache.hadoop.mapred.MapTask] - Processing split: file:/usr/local/hadoop/file/dedup/part-r-00000:0+32
-  2017-06-30 14:47:56,572 DEBUG [org.apache.hadoop.mapred.MapTask] - Trying map output collector class: org.apache.hadoop.mapred.MapTask$MapOutputBuffer
-  2017-06-30 14:47:56,847 INFO [org.apache.hadoop.mapred.MapTask] - (EQUATOR) 0 kvi 26214396(104857584)
-  2017-06-30 14:47:56,856 INFO [org.apache.hadoop.mapred.MapTask] - mapreduce.task.io.sort.mb: 100
-  2017-06-30 14:47:56,856 INFO [org.apache.hadoop.mapred.MapTask] - soft limit at 83886080
-  2017-06-30 14:47:56,856 INFO [org.apache.hadoop.mapred.MapTask] - bufstart = 0; bufvoid = 104857600
-  2017-06-30 14:47:56,856 INFO [org.apache.hadoop.mapred.MapTask] - kvstart = 26214396; length = 6553600
-  2017-06-30 14:47:56,856 INFO [org.apache.hadoop.mapred.MapTask] - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
-  2017-06-30 14:47:56,870 INFO [org.apache.hadoop.mapred.LocalJobRunner] - 
-  2017-06-30 14:47:56,870 INFO [org.apache.hadoop.mapred.MapTask] - Starting flush of map output
-  2017-06-30 14:47:56,870 INFO [org.apache.hadoop.mapred.MapTask] - Spilling map output
-  2017-06-30 14:47:56,870 INFO [org.apache.hadoop.mapred.MapTask] - bufstart = 0; bufend = 32; bufvoid = 104857600
-  2017-06-30 14:47:56,870 INFO [org.apache.hadoop.mapred.MapTask] - kvstart = 26214396(104857584); kvend = 26214368(104857472); length = 29/6553600
-  2017-06-30 14:47:56,890 INFO [org.apache.hadoop.mapred.MapTask] - Finished spill 0
-  2017-06-30 14:47:56,906 INFO [org.apache.hadoop.mapred.Task] - Task:attempt_local1514748184_0002_m_000001_0 is done. And is in the process of committing
-  2017-06-30 14:47:56,932 INFO [org.apache.hadoop.mapred.LocalJobRunner] - map
-  2017-06-30 14:47:56,933 INFO [org.apache.hadoop.mapred.Task] - Task 'attempt_local1514748184_0002_m_000001_0' done.
-  2017-06-30 14:47:56,933 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Finishing task: attempt_local1514748184_0002_m_000001_0
-  2017-06-30 14:47:56,933 INFO [org.apache.hadoop.mapred.LocalJobRunner] - map task executor complete.
-  2017-06-30 14:47:56,933 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Starting reduce thread pool executor.
-  2017-06-30 14:47:56,933 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Max local threads: 1
-  2017-06-30 14:47:56,933 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Reduce tasks to process: 1
-  2017-06-30 14:47:56,934 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Waiting for reduce tasks
-  2017-06-30 14:47:56,934 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Starting task: attempt_local1514748184_0002_r_000000_0
-  2017-06-30 14:47:56,945 DEBUG [org.apache.hadoop.mapred.SortedRanges] - currentIndex 0   0:0
-  2017-06-30 14:47:56,957 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - mapreduce.cluster.local.dir for child : /tmp/hadoop-hadoop/mapred/local/localRunner//hadoop/jobcache/job_local1514748184_0002/attempt_local1514748184_0002_r_000000_0
-  2017-06-30 14:47:56,968 DEBUG [org.apache.hadoop.mapred.Task] - using new api for output committer
-  2017-06-30 14:47:56,968 INFO [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - File Output Committer Algorithm version is 1
-  2017-06-30 14:47:56,970 INFO [org.apache.hadoop.mapred.Task] -  Using ResourceCalculatorProcessTree : [ ]
-  2017-06-30 14:47:56,972 INFO [org.apache.hadoop.mapred.ReduceTask] - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@13c8c7fd
-  2017-06-30 14:47:56,981 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - MergerManager: memoryLimit=353376672, maxSingleShuffleLimit=88344168, mergeThreshold=233228608, ioSortFactor=10, memToMemMergeOutputsThreshold=10
-  2017-06-30 14:47:56,997 INFO [org.apache.hadoop.mapreduce.task.reduce.EventFetcher] - attempt_local1514748184_0002_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
-  2017-06-30 14:47:56,999 DEBUG [org.apache.hadoop.mapreduce.task.reduce.EventFetcher] - Got 0 map completion events from 0
-  2017-06-30 14:47:57,012 DEBUG [org.apache.hadoop.mapreduce.task.reduce.EventFetcher] - GetMapEventsThread about to sleep for 1000
-  2017-06-30 14:47:57,036 DEBUG [org.apache.hadoop.mapreduce.task.reduce.LocalFetcher] - LocalFetcher 2 going to fetch: attempt_local1514748184_0002_m_000001_0
-  2017-06-30 14:47:57,037 DEBUG [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - attempt_local1514748184_0002_m_000001_0: Proceeding with shuffle since usedMemory (0) is lesser than memoryLimit (353376672).CommitMemory is (0)
-  2017-06-30 14:47:57,037 INFO [org.apache.hadoop.mapreduce.task.reduce.LocalFetcher] - localfetcher#2 about to shuffle output of map attempt_local1514748184_0002_m_000001_0 decomp: 50 len: 54 to MEMORY
-  2017-06-30 14:47:57,037 INFO [org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput] - Read 50 bytes from map-output for attempt_local1514748184_0002_m_000001_0
-  2017-06-30 14:47:57,037 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - closeInMemoryFile -> map-output of size: 50, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->50
-  2017-06-30 14:47:57,040 DEBUG [org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl] - map attempt_local1514748184_0002_m_000001_0 done 1 / 2 copied.
-  2017-06-30 14:47:57,041 DEBUG [org.apache.hadoop.mapreduce.task.reduce.LocalFetcher] - LocalFetcher 2 going to fetch: attempt_local1514748184_0002_m_000000_0
-  2017-06-30 14:47:57,041 DEBUG [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - attempt_local1514748184_0002_m_000000_0: Proceeding with shuffle since usedMemory (50) is lesser than memoryLimit (353376672).CommitMemory is (50)
-  2017-06-30 14:47:57,041 INFO [org.apache.hadoop.mapreduce.task.reduce.LocalFetcher] - localfetcher#2 about to shuffle output of map attempt_local1514748184_0002_m_000000_0 decomp: 50 len: 54 to MEMORY
-  2017-06-30 14:47:57,045 INFO [org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput] - Read 50 bytes from map-output for attempt_local1514748184_0002_m_000000_0
-  2017-06-30 14:47:57,056 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - closeInMemoryFile -> map-output of size: 50, inMemoryMapOutputs.size() -> 2, commitMemory -> 50, usedMemory ->100
-  2017-06-30 14:47:57,058 DEBUG [org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl] - map attempt_local1514748184_0002_m_000000_0 done 2 / 2 copied.
-  2017-06-30 14:47:57,086 INFO [org.apache.hadoop.mapreduce.task.reduce.EventFetcher] - EventFetcher is interrupted.. Returning
-  2017-06-30 14:47:57,087 INFO [org.apache.hadoop.mapred.LocalJobRunner] - 2 / 2 copied.
-  2017-06-30 14:47:57,087 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - finalMerge called with 2 in-memory map-outputs and 0 on-disk map-outputs
-  2017-06-30 14:47:57,124 INFO [org.apache.hadoop.mapred.Merger] - Merging 2 sorted segments
-  2017-06-30 14:47:57,125 INFO [org.apache.hadoop.mapred.Merger] - Down to the last merge-pass, with 2 segments left of total size: 92 bytes
-  2017-06-30 14:47:57,138 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - Merged 2 segments, 100 bytes to disk to satisfy reduce memory limit
-  2017-06-30 14:47:57,139 DEBUG [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - Disk file: /tmp/hadoop-hadoop/mapred/local/localRunner/hadoop/jobcache/job_local1514748184_0002/attempt_local1514748184_0002_r_000000_0/output/map_1.out.merged Length is 102
-  2017-06-30 14:47:57,150 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - Merging 1 files, 102 bytes from disk
-  2017-06-30 14:47:57,150 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - Merging 0 segments, 0 bytes from memory into reduce
-  2017-06-30 14:47:57,150 INFO [org.apache.hadoop.mapred.Merger] - Merging 1 sorted segments
-  2017-06-30 14:47:57,150 INFO [org.apache.hadoop.mapred.Merger] - Down to the last merge-pass, with 1 segments left of total size: 94 bytes
-  2017-06-30 14:47:57,157 INFO [org.apache.hadoop.mapred.LocalJobRunner] - 2 / 2 copied.
-  2017-06-30 14:47:57,234 INFO [org.apache.hadoop.mapred.Task] - Task:attempt_local1514748184_0002_r_000000_0 is done. And is in the process of committing
-  2017-06-30 14:47:57,245 INFO [org.apache.hadoop.mapred.LocalJobRunner] - 2 / 2 copied.
-  2017-06-30 14:47:57,245 INFO [org.apache.hadoop.mapred.Task] - Task attempt_local1514748184_0002_r_000000_0 is allowed to commit now
-  2017-06-30 14:47:57,247 INFO [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - Saved output of task 'attempt_local1514748184_0002_r_000000_0' to file:/usr/local/hadoop/file/newUser/_temporary/0/task_local1514748184_0002_r_000000
-  2017-06-30 14:47:57,263 INFO [org.apache.hadoop.mapred.LocalJobRunner] - reduce > reduce
-  2017-06-30 14:47:57,263 INFO [org.apache.hadoop.mapred.Task] - Task 'attempt_local1514748184_0002_r_000000_0' done.
-  2017-06-30 14:47:57,266 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Finishing task: attempt_local1514748184_0002_r_000000_0
-  2017-06-30 14:47:57,272 INFO [org.apache.hadoop.mapred.LocalJobRunner] - reduce task executor complete.
-  2017-06-30 14:47:57,286 DEBUG [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - Merging data from DeprecatedRawLocalFileStatus{path=file:/usr/local/hadoop/file/newUser/_temporary/0/task_local1514748184_0002_r_000000; isDirectory=true; modification_time=1498805277000; access_time=0; owner=; group=; permission=rwxrwxrwx; isSymlink=false} to file:/usr/local/hadoop/file/newUser
-  2017-06-30 14:47:57,287 DEBUG [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - Merging data from DeprecatedRawLocalFileStatus{path=file:/usr/local/hadoop/file/newUser/_temporary/0/task_local1514748184_0002_r_000000/part-r-00000; isDirectory=false; length=15; replication=1; blocksize=33554432; modification_time=1498805277000; access_time=0; owner=; group=; permission=rw-rw-rw-; isSymlink=false} to file:/usr/local/hadoop/file/newUser/part-r-00000
-  2017-06-30 14:47:57,323 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:331)
-  2017-06-30 14:48:00,982 DEBUG [org.apache.hadoop.mapreduce.lib.jobcontrol.JobControl] - Checking state of job job name:	NewUser
-job id:	myctrl1
-job state:	RUNNING
-job mapred id:	job_local1514748184_0002
-job message:	just initialized
-job has 1 dependeng jobs:
-	 depending job 0:	DataDeduplication
-
-  2017-06-30 14:48:00,985 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
-  2017-06-30 14:48:00,985 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.short.circuit.replica.stale.threshold.ms
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.authentication.token.validity
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3.block.size
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ha.failover-controller.graceful-fence.rpc-timeout.ms
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.tasktracker.local.dir.minspacekill
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.resource.du.reserved
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.cleaner.interval-ms
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.datanode.registration.ip-hostname-check
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.intermediate-done-dir
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobtracker.http.address
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.backup.http-address
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.edits.noeditlogchannelflush
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.recovery.compaction-interval-secs
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.shuffle.input.buffer.percent
+  2017-07-04 14:34:17,647 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.map.maxattempts
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.http.policy
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.audit.loggers
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.groups.cache.warn.after.ms
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for io.serializations
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.tasktracker.outofband.heartbeat
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.shuffle.read.timeout
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.crypto.buffer.size
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.cross-origin.allowed-methods
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.skip.proc.count.autoincr
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.ifile.readahead.bytes
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.http.policy
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.secure
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.safemode.min.datanodes
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.file-block-storage-locations.num-threads
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.cluster.local.dir
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.tasktracker.report.address
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.secondary.https-address
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.kerberos.kinit.command
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.http-authentication.type
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.block.access.token.lifetime
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.webhdfs.enabled
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.dispatcher.drain-events.timeout
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.delegation.token.max-lifetime
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.avoid.write.stale.datanode
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.drop.cache.behind.writes
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.log-aggregation.retain-seconds
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.complete.cancel.delegation.tokens
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.local.clientfactory.class.name
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.fail-fast
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.shuffle.connection-keep-alive.timeout
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.num.extra.edits.retained
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.scheduler.minimum-allocation-vcores
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.client.connect.max.retries.on.timeouts
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.client.retry-interval-ms
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.client.max-retries
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3n.block.size
+  2017-07-04 14:34:17,650 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.map.output.collector.class
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ha.health-monitor.connect-retry-interval.ms
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.shuffle.max.threads
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for nfs.exports.allowed.hosts
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.mmap.cache.size
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.tasktracker.map.tasks.maximum
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for io.file.buffer.size
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.container-metrics.unregister-delay-ms
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.datanode-restart.timeout
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for io.mapfile.bloom.size
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.kms.client.authentication.retry-count
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.checkpoint.txns
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.client.connect.retry.interval
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client-write-packet-size
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.shuffle.connect.timeout
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.fs.state-store.uri
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.swift.impl
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.zk.connection.timeout.ms
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapred.queue.default.acl-administer-jobs
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.submithostaddress
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.cachereport.intervalMsec
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.shuffle.log.backups
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.am.container.log.limit.kb
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.resourcemanager.minimum.version
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ftp.blocksize
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.address
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.kerberos.principal.pattern
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for file.stream-buffer-size
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.scheduler.monitor.enable
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.ubertask.maxreduces
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for nfs.allow.insecure.ports
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.nodemanager-connect-retries
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.nm.uploader.thread-count
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.client.idlethreshold
+  2017-07-04 14:34:17,651 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ftp.stream-buffer-size
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.client-server.address
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.client.job.retry-interval
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.failover.connection.retries.on.timeouts
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.replication.work.multiplier.per.iteration
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.authentication.simple.anonymous.allowed
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.authorization
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.client.nodemanager-connect.retry-interval-ms
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.am.liveness-monitor.expiry-interval-ms
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.har.impl.disable.cache
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.linux-container-executor.resources-handler.class
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.leveldb-timeline-store.read-cache-size
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.authentication
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.image.compression.codec
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.files.preserve.failedtasks
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.read.shortcircuit.streams.cache.size
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.leveldb-timeline-store.path
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.reduce.slowstart.completedmaps
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.minicluster.fixed.ports
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for file.replication
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.ha.automatic-failover.enabled
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.userlog.retain.hours
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.joblist.cache.size
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.accesstime.precision
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.work-preserving-recovery.enabled
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.fs-limits.max-xattrs-per-inode
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.map.output.value.class
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for io.mapfile.bloom.error.rate
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.store.class
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.image.transfer.timeout
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.leveldb-state-store.path
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for nfs.wtmax
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.support.allow.format
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.multipart.purge
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.secondary.namenode.kerberos.internal.spnego.principal
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.connection.establish.timeout
+  2017-07-04 14:34:17,652 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.stream-buffer-size
+  2017-07-04 14:34:17,653 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.invalidate.work.pct.per.iteration
+  2017-07-04 14:34:17,653 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.container-executor.class
+  2017-07-04 14:34:17,653 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.multipart.purge.age
+  2017-07-04 14:34:17,653 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.scheduler.client.thread-count
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.top.enabled
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.shuffle.log.separate
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.low-watermark
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.fast.buffer.size
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.user.group.static.mapping.overrides
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.maximum.data.length
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for tfile.fs.input.buffer.size
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.cached.conn.retry
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.authentication.type
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.list.encryption.zones.num.responses
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.map.cpu.vcores
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.path.based.cache.refresh.interval.ms
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.decommission.interval
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.fs-limits.max-directory-items
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.zk-retry-interval-ms
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ftp.bytes-per-checksum
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.ha.log-roll.period
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.user.home.dir.prefix
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.client.fallback-to-simple-auth-allowed
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.pmem-check-enabled
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.remote-app-log-dir
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.inotify.max.events.per.rpc
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.profile.maps
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.shuffle.ssl.file.buffer.size
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.tasktracker.healthchecker.script.timeout
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.webapp.https.address
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.resource.percentage-physical-cpu-limit
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.am.command-opts
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.fs-limits.max-xattr-size
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.http.address
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.amlauncher.thread-count
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.blocks.per.postponedblocks.rescan
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.nm.uploader.replication.factor
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.zk.root
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.jetty.logs.serve.aliases
+  2017-07-04 14:34:17,654 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.client.failover-proxy-provider
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.admin.acl
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.reducer.unconditional-preempt.delay.sec
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.cross-origin.max-age
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.am.hard-kill-timeout-ms
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.remote-app-log-dir-suffix
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.principal
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.webapp.address
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.recovery.enable
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.store.in-memory.check-period-mins
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for nfs.mountd.port
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.merge.inmem.threshold
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.df.interval
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.enabled
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobtracker.jobhistory.lru.cache.size
+  2017-07-04 14:34:17,655 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.cross-origin.allowed-headers
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.profile
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.output.key.class
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.hostname
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.num.checkpoints.retained
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.queuename
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.max-age-ms
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.token.tracking.ids.enabled
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.localizer.client.thread-count
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.uploader.server.thread-count
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.mmap.retry.timeout.ms
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.move.thread-count
+  2017-07-04 14:34:17,658 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.permissions.enabled
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.blockreport.split.threshold
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.AbstractFileSystem.hdfs.impl
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.balance.bandwidthPerSec
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.block.scanner.volume.bytes.per.second
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.filter.initializers
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.http-authentication.simple.anonymous.allowed
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.client.rpc-timeout.ms
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.default.chunk.view.size
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.client-server.thread-count
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.resource-tracker.address
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.working.dir
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.datestring.cache.size
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.profile.params
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.decommission.blocks.per.interval
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.handler.count
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.image.transfer.bandwidthPerSec
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for rpc.metrics.quantile.enable
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobtracker.expire.trackers.interval
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.timeout
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.client.max-retries
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.resource.memory-mb
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.disk-health-checker.min-healthy-disks
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.failed.volumes.tolerated
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.handler-thread-count
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.server.listen.queue.size
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.threads.max
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.connect.max-wait.ms
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.fileoutputcommitter.algorithm.version
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.framework.name
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.map.skip.proc.count.autoincr
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.max.split.locations
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.scheduler.class
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.system-metrics-publisher.enabled
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.blocksize
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.nested-level
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.shuffle.connection-keep-alive.enable
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.threads.keepalivetime
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.connection.timeout
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for file.client-write-packet-size
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ha.failover-controller.cli-check.rpc-timeout.ms
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ha.zookeeper.acl
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.write.stale.datanode.ratio
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.encrypt.data.transfer
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for ipc.client.ping
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.shared.file.descriptor.paths
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.input.lineinputformat.linespermap
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.delayed.delegation-token.removal-interval-ms
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.localizer.fetch.thread-count
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.failover.max.attempts
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.scheduler.address
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.webapp.cross-origin.enabled
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.read.shortcircuit.streams.cache.expiry.ms
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.leveldb-timeline-store.start-time-write-cache-size
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.health-checker.script.timeout-ms
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.fs.state-store.num-retries
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.ssl.require.client.cert
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.uid.cache.secs
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.keytab
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.read.shortcircuit.skip.checksum
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.ha.automatic-failover.zk-base-path
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.shuffle.ssl.enabled
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.log.level
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.rm.enabled
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.tasktracker.dns.interface
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.system-metrics-publisher.dispatcher.pool-size
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.speculative.speculative-cap-running-tasks
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.block.id.layout.upgrade.threads
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.use.datanode.hostname
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.context
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.ha.enabled
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapred.reducer.new-api
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.delegation.token.renew-interval
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.blockreport.intervalMsec
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.multipart.threshold
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.cross-origin.enabled
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.shuffle.memory.limit.percent
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.https.server.keystore.resource
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for io.map.index.skip
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.hdfs-servers
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobtracker.taskscheduler
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.kerberos.internal.spnego.principal
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.state-store.max-completed-applications
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.map.output.compress
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.kms.client.encrypted.key.cache.num.refill.threads
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3n.multipart.uploads.block.size
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.merge.progress.records
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.dns.interface
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for map.sort.class
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.aux-services.mapreduce_shuffle.class
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for tfile.fs.output.buffer.size
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.du.interval
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.failover.connection.retries
+  2017-07-04 14:34:17,677 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.top.window.num.buckets
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.job.dir
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for fs.s3a.buffer.dir
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.shuffle.retry-delay.max.ms
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.uploader.server.address
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.client.progressmonitor.pollinterval
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.app.mapreduce.shuffle.log.limit.kb
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.max.locked.memory
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.retrycache.expirytime.millis
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.scan.period.hours
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.best-effort
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.move.interval-ms
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.ha.fencing.ssh.connect-timeout
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.log-aggregation.roll-monitoring-interval-seconds
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.fs-limits.max-component-length
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.zk.quorum
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.cross-origin.allowed-origins
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.enable.retrycache
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.du.reserved
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.state-store-class
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.datanode.ipc.address
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.system.acls
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.client.block.write.replace-datanode-on-failure.policy
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.path.based.cache.retry.interval.ms
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.crypto.cipher.suite
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.ha.tail-edits.period
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.task.profile.reduce.params
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.timeline-service.generic-application-history.max-applications
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.registry.jaas.context
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.hostname
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.reduce.memory.mb
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.group
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.http.authentication.kerberos.principal
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for hadoop.security.group.mapping.ldap.search.filter.user
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.disk-health-checker.min-free-space-per-disk-mb
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.edits.dir
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.client.failover-retries-on-socket-timeouts
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.decommission.max.concurrent.tracked.nodes
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.client.completion.pollinterval
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.name.dir.restore
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.secondary.http-address
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for mapreduce.jobhistory.recovery.store.leveldb.path
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.sharedcache.store.class
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for s3.bytes-per-checksum
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.windows-container.cpu-limit.enabled
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.resourcemanager.webapp.https.address
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for yarn.nodemanager.vmem-pmem-ratio
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.namenode.checkpoint.period
+  2017-07-04 14:34:17,678 DEBUG [org.apache.hadoop.conf.Configuration] - Handling deprecation for dfs.ha.automatic-failover.enabled
+  2017-07-04 14:34:17,893 INFO [org.apache.hadoop.mapreduce.Job] - The url to track the job: http://localhost:8080/
+  2017-07-04 14:34:17,897 INFO [org.apache.hadoop.mapreduce.Job] - Running job: job_local563786639_0001
+  2017-07-04 14:34:17,899 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+  2017-07-04 14:34:17,908 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+  2017-07-04 14:34:17,896 INFO [org.apache.hadoop.mapred.LocalJobRunner] - OutputCommitter set in config null
+  2017-07-04 14:34:17,927 INFO [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - File Output Committer Algorithm version is 1
+  2017-07-04 14:34:17,932 INFO [org.apache.hadoop.mapred.LocalJobRunner] - OutputCommitter is org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter
+  2017-07-04 14:34:18,110 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Starting mapper thread pool executor.
+  2017-07-04 14:34:18,110 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Max local threads: 1
+  2017-07-04 14:34:18,110 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Map tasks to process: 1
+  2017-07-04 14:34:18,118 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Waiting for map tasks
+  2017-07-04 14:34:18,120 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Starting task: attempt_local563786639_0001_m_000000_0
+  2017-07-04 14:34:18,177 DEBUG [org.apache.hadoop.mapred.SortedRanges] - currentIndex 0   0:0
+  2017-07-04 14:34:18,235 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - mapreduce.cluster.local.dir for child : /tmp/hadoop-hadoop/mapred/local/localRunner//hadoop/jobcache/job_local563786639_0001/attempt_local563786639_0001_m_000000_0
+  2017-07-04 14:34:18,244 DEBUG [org.apache.hadoop.mapred.Task] - using new api for output committer
+  2017-07-04 14:34:18,247 INFO [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - File Output Committer Algorithm version is 1
+  2017-07-04 14:34:18,307 INFO [org.apache.hadoop.mapred.Task] -  Using ResourceCalculatorProcessTree : [ ]
+  2017-07-04 14:34:18,324 INFO [org.apache.hadoop.mapred.MapTask] - Processing split: file:/usr/local/hadoop/file/usr/1.txt:0+6753
+  2017-07-04 14:34:18,382 DEBUG [org.apache.hadoop.mapred.MapTask] - Trying map output collector class: org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+  2017-07-04 14:34:18,618 INFO [org.apache.hadoop.mapred.MapTask] - (EQUATOR) 0 kvi 26214396(104857584)
+  2017-07-04 14:34:18,620 INFO [org.apache.hadoop.mapred.MapTask] - mapreduce.task.io.sort.mb: 100
+  2017-07-04 14:34:18,620 INFO [org.apache.hadoop.mapred.MapTask] - soft limit at 83886080
+  2017-07-04 14:34:18,620 INFO [org.apache.hadoop.mapred.MapTask] - bufstart = 0; bufvoid = 104857600
+  2017-07-04 14:34:18,620 INFO [org.apache.hadoop.mapred.MapTask] - kvstart = 26214396; length = 6553600
+  2017-07-04 14:34:18,642 INFO [org.apache.hadoop.mapred.MapTask] - Map output collector class = org.apache.hadoop.mapred.MapTask$MapOutputBuffer
+  2017-07-04 14:34:18,712 INFO [org.apache.hadoop.mapred.LocalJobRunner] - 
+  2017-07-04 14:34:18,720 INFO [org.apache.hadoop.mapred.MapTask] - Starting flush of map output
+  2017-07-04 14:34:18,720 INFO [org.apache.hadoop.mapred.MapTask] - Spilling map output
+  2017-07-04 14:34:18,720 INFO [org.apache.hadoop.mapred.MapTask] - bufstart = 0; bufend = 1323; bufvoid = 104857600
+  2017-07-04 14:34:18,720 INFO [org.apache.hadoop.mapred.MapTask] - kvstart = 26214396(104857584); kvend = 26214148(104856592); length = 249/6553600
+  2017-07-04 14:34:18,746 INFO [org.apache.hadoop.mapred.MapTask] - Finished spill 0
+  2017-07-04 14:34:18,750 INFO [org.apache.hadoop.mapred.Task] - Task:attempt_local563786639_0001_m_000000_0 is done. And is in the process of committing
+  2017-07-04 14:34:18,778 INFO [org.apache.hadoop.mapred.LocalJobRunner] - map
+  2017-07-04 14:34:18,778 INFO [org.apache.hadoop.mapred.Task] - Task 'attempt_local563786639_0001_m_000000_0' done.
+  2017-07-04 14:34:18,778 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Finishing task: attempt_local563786639_0001_m_000000_0
+  2017-07-04 14:34:18,779 INFO [org.apache.hadoop.mapred.LocalJobRunner] - map task executor complete.
+  2017-07-04 14:34:18,786 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Starting reduce thread pool executor.
+  2017-07-04 14:34:18,786 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Max local threads: 1
+  2017-07-04 14:34:18,786 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - Reduce tasks to process: 1
+  2017-07-04 14:34:18,786 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Waiting for reduce tasks
+  2017-07-04 14:34:18,787 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Starting task: attempt_local563786639_0001_r_000000_0
+  2017-07-04 14:34:18,794 DEBUG [org.apache.hadoop.mapred.SortedRanges] - currentIndex 0   0:0
+  2017-07-04 14:34:18,802 DEBUG [org.apache.hadoop.mapred.LocalJobRunner] - mapreduce.cluster.local.dir for child : /tmp/hadoop-hadoop/mapred/local/localRunner//hadoop/jobcache/job_local563786639_0001/attempt_local563786639_0001_r_000000_0
+  2017-07-04 14:34:18,805 DEBUG [org.apache.hadoop.mapred.Task] - using new api for output committer
+  2017-07-04 14:34:18,808 INFO [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - File Output Committer Algorithm version is 1
+  2017-07-04 14:34:18,809 INFO [org.apache.hadoop.mapred.Task] -  Using ResourceCalculatorProcessTree : [ ]
+  2017-07-04 14:34:18,812 INFO [org.apache.hadoop.mapred.ReduceTask] - Using ShuffleConsumerPlugin: org.apache.hadoop.mapreduce.task.reduce.Shuffle@1602b42
+  2017-07-04 14:34:18,827 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - MergerManager: memoryLimit=353376672, maxSingleShuffleLimit=88344168, mergeThreshold=233228608, ioSortFactor=10, memToMemMergeOutputsThreshold=10
+  2017-07-04 14:34:18,838 INFO [org.apache.hadoop.mapreduce.task.reduce.EventFetcher] - attempt_local563786639_0001_r_000000_0 Thread started: EventFetcher for fetching Map Completion Events
+  2017-07-04 14:34:18,848 DEBUG [org.apache.hadoop.mapreduce.task.reduce.EventFetcher] - Got 0 map completion events from 0
+  2017-07-04 14:34:18,849 DEBUG [org.apache.hadoop.mapreduce.task.reduce.EventFetcher] - GetMapEventsThread about to sleep for 1000
+  2017-07-04 14:34:18,860 DEBUG [org.apache.hadoop.mapreduce.task.reduce.LocalFetcher] - LocalFetcher 1 going to fetch: attempt_local563786639_0001_m_000000_0
+  2017-07-04 14:34:18,910 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+  2017-07-04 14:34:18,910 INFO [org.apache.hadoop.mapreduce.Job] - Job job_local563786639_0001 running in uber mode : false
+  2017-07-04 14:34:18,911 INFO [org.apache.hadoop.mapreduce.Job] -  map 100% reduce 0%
+  2017-07-04 14:34:18,912 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskCompletionEvents(Job.java:670)
+  2017-07-04 14:34:18,912 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+  2017-07-04 14:34:18,912 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+  2017-07-04 14:34:18,952 DEBUG [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - attempt_local563786639_0001_m_000000_0: Proceeding with shuffle since usedMemory (0) is lesser than memoryLimit (353376672).CommitMemory is (0)
+  2017-07-04 14:34:18,967 INFO [org.apache.hadoop.mapreduce.task.reduce.LocalFetcher] - localfetcher#1 about to shuffle output of map attempt_local563786639_0001_m_000000_0 decomp: 1451 len: 1455 to MEMORY
+  2017-07-04 14:34:18,986 INFO [org.apache.hadoop.mapreduce.task.reduce.InMemoryMapOutput] - Read 1451 bytes from map-output for attempt_local563786639_0001_m_000000_0
+  2017-07-04 14:34:19,000 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - closeInMemoryFile -> map-output of size: 1451, inMemoryMapOutputs.size() -> 1, commitMemory -> 0, usedMemory ->1451
+  2017-07-04 14:34:19,003 DEBUG [org.apache.hadoop.mapreduce.task.reduce.ShuffleSchedulerImpl] - map attempt_local563786639_0001_m_000000_0 done 1 / 1 copied.
+  2017-07-04 14:34:19,003 INFO [org.apache.hadoop.mapreduce.task.reduce.EventFetcher] - EventFetcher is interrupted.. Returning
+  2017-07-04 14:34:19,004 INFO [org.apache.hadoop.mapred.LocalJobRunner] - 1 / 1 copied.
+  2017-07-04 14:34:19,004 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - finalMerge called with 1 in-memory map-outputs and 0 on-disk map-outputs
+  2017-07-04 14:34:19,016 INFO [org.apache.hadoop.mapred.Merger] - Merging 1 sorted segments
+  2017-07-04 14:34:19,016 INFO [org.apache.hadoop.mapred.Merger] - Down to the last merge-pass, with 1 segments left of total size: 1432 bytes
+  2017-07-04 14:34:19,026 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - Merged 1 segments, 1451 bytes to disk to satisfy reduce memory limit
+  2017-07-04 14:34:19,027 DEBUG [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - Disk file: /tmp/hadoop-hadoop/mapred/local/localRunner/hadoop/jobcache/job_local563786639_0001/attempt_local563786639_0001_r_000000_0/output/map_0.out.merged Length is 1455
+  2017-07-04 14:34:19,027 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - Merging 1 files, 1455 bytes from disk
+  2017-07-04 14:34:19,028 INFO [org.apache.hadoop.mapreduce.task.reduce.MergeManagerImpl] - Merging 0 segments, 0 bytes from memory into reduce
+  2017-07-04 14:34:19,028 INFO [org.apache.hadoop.mapred.Merger] - Merging 1 sorted segments
+  2017-07-04 14:34:19,029 INFO [org.apache.hadoop.mapred.Merger] - Down to the last merge-pass, with 1 segments left of total size: 1432 bytes
+  2017-07-04 14:34:19,030 INFO [org.apache.hadoop.mapred.LocalJobRunner] - 1 / 1 copied.
+  2017-07-04 14:34:19,054 INFO [org.apache.hadoop.conf.Configuration.deprecation] - mapred.skip.on is deprecated. Instead, use mapreduce.job.skiprecords
+  2017-07-04 14:34:19,085 INFO [org.apache.hadoop.mapred.Task] - Task:attempt_local563786639_0001_r_000000_0 is done. And is in the process of committing
+  2017-07-04 14:34:19,087 INFO [org.apache.hadoop.mapred.LocalJobRunner] - 1 / 1 copied.
+  2017-07-04 14:34:19,094 INFO [org.apache.hadoop.mapred.Task] - Task attempt_local563786639_0001_r_000000_0 is allowed to commit now
+  2017-07-04 14:34:19,095 INFO [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - Saved output of task 'attempt_local563786639_0001_r_000000_0' to file:/usr/local/hadoop/file/PayUserCount/_temporary/0/task_local563786639_0001_r_000000
+  2017-07-04 14:34:19,105 INFO [org.apache.hadoop.mapred.LocalJobRunner] - reduce > reduce
+  2017-07-04 14:34:19,105 INFO [org.apache.hadoop.mapred.Task] - Task 'attempt_local563786639_0001_r_000000_0' done.
+  2017-07-04 14:34:19,105 INFO [org.apache.hadoop.mapred.LocalJobRunner] - Finishing task: attempt_local563786639_0001_r_000000_0
+  2017-07-04 14:34:19,105 INFO [org.apache.hadoop.mapred.LocalJobRunner] - reduce task executor complete.
+  2017-07-04 14:34:19,108 DEBUG [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - Merging data from DeprecatedRawLocalFileStatus{path=file:/usr/local/hadoop/file/PayUserCount/_temporary/0/task_local563786639_0001_r_000000; isDirectory=true; modification_time=1499150059000; access_time=0; owner=; group=; permission=rwxrwxrwx; isSymlink=false} to file:/usr/local/hadoop/file/PayUserCount
+  2017-07-04 14:34:19,108 DEBUG [org.apache.hadoop.mapreduce.lib.output.FileOutputCommitter] - Merging data from DeprecatedRawLocalFileStatus{path=file:/usr/local/hadoop/file/PayUserCount/_temporary/0/task_local563786639_0001_r_000000/part-r-00000; isDirectory=false; length=190; replication=1; blocksize=33554432; modification_time=1499150059000; access_time=0; owner=; group=; permission=rw-rw-rw-; isSymlink=false} to file:/usr/local/hadoop/file/PayUserCount/part-r-00000
+  2017-07-04 14:34:19,138 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.fs.FileContext.getAbstractFileSystem(FileContext.java:331)
+  2017-07-04 14:34:19,913 INFO [org.apache.hadoop.mapreduce.Job] -  map 100% reduce 100%
+  2017-07-04 14:34:19,913 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskCompletionEvents(Job.java:670)
+  2017-07-04 14:34:19,914 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+  2017-07-04 14:34:19,914 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+  2017-07-04 14:34:19,915 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getTaskCompletionEvents(Job.java:670)
+  2017-07-04 14:34:19,917 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+  2017-07-04 14:34:19,918 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
+  2017-07-04 14:34:19,918 INFO [org.apache.hadoop.mapreduce.Job] - Job job_local563786639_0001 completed successfully
+  2017-07-04 14:34:19,919 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.getCounters(Job.java:758)
+  2017-07-04 14:34:19,984 INFO [org.apache.hadoop.mapreduce.Job] - Counters: 30
+	File System Counters
+		FILE: Number of bytes read=16764
+		FILE: Number of bytes written=569031
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+	Map-Reduce Framework
+		Map input records=63
+		Map output records=63
+		Map output bytes=1323
+		Map output materialized bytes=1455
+		Input split bytes=102
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=10
+		Reduce shuffle bytes=1455
+		Reduce input records=63
+		Reduce output records=10
+		Spilled Records=126
+		Shuffled Maps =1
+		Failed Shuffles=0
+		Merged Map outputs=1
+		GC time elapsed (ms)=71
+		Total committed heap usage (bytes)=274866176
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=6753
+	File Output Format Counters 
+		Bytes Written=202
+  2017-07-04 14:34:19,984 DEBUG [org.apache.hadoop.security.UserGroupInformation] - PrivilegedAction as:hadoop (auth:SIMPLE) from:org.apache.hadoop.mapreduce.Job.updateStatus(Job.java:320)
   

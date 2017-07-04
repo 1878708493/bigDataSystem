@@ -174,5 +174,6 @@
 	<classpathentry kind="lib" path="/usr/local/hadoop/share/hadoop/common/lib/asm-3.2.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop/share/hadoop/common/hadoop-nfs-2.7.3.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop/share/hadoop/common/hadoop-common-2.7.3.jar"/>
+	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
