@@ -6,17 +6,24 @@ import org.apache.hadoop.io.FloatWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-public class PayMoneyReducer extends Reducer<Text, FloatWritable, Text, Text> {
+import com.sdu.edu.bean.TimeValueBean;
 
-	public void reduce(Text _key, Iterable<FloatWritable> values, Context context) throws IOException, InterruptedException {
+public class PayMoneyReducer extends Reducer<Text, TimeValueBean, Text, TimeValueBean> {
+
+	public void reduce(Text _key, Iterable<TimeValueBean> values, Context context) throws IOException, InterruptedException {
 		float money = 0.00f;
+		String time = null;
 		// process values
-		for (FloatWritable val : values) {
-			if(val.get() > 0.00){
-				money += val.get();
+		for (TimeValueBean val : values) {
+			if(time == null)
+				time = val.getTime();
+			
+			double cost = Double.parseDouble(val.getNum());
+			if(cost > 0.00){
+				money += cost;
 			}
 		}
-		context.write(_key, new Text(money + ""));
+		context.write(_key, new TimeValueBean(money + "", time));
 	}
 
 }

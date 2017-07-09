@@ -6,22 +6,27 @@ import java.util.ArrayList;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
+import com.sdu.edu.bean.TimeValueBean;
+
 /**
  * 获取新用户数量的reducer
  * @author 王宁
  *
  */
-public class NewUserReducer extends Reducer<Text, Text, Text, Text> {
+public class NewUserReducer extends Reducer<Text, TimeValueBean, Text, TimeValueBean> {
 
-	public void reduce(Text _key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+	public void reduce(Text _key, Iterable<TimeValueBean> values, Context context) throws IOException, InterruptedException {
 		// process values
 		int one = 0;	int two = 0;
 		int three = 0;	int four = 0;
 		int five = 0;	int six = 0;
 		int seven = 0;	int eight = 0;
 		int nine = 0;
-		for (Text val : values) {	
-			int useTime = Integer.parseInt(val.toString());
+		String time = null;
+		for (TimeValueBean val : values) {	
+			int useTime = Integer.parseInt(val.getNum());
+			if(time == null)
+				time = val.getTime();
 			if(useTime > 0 && useTime <= 4)
 				one++;
 			else if(useTime > 4 && useTime <= 10)
@@ -41,15 +46,15 @@ public class NewUserReducer extends Reducer<Text, Text, Text, Text> {
 			else
 				nine++;
 		}
-		context.write(new Text(_key), new Text(one + ""));
-		context.write(new Text(_key), new Text(two + ""));
-		context.write(new Text(_key), new Text(three + ""));
-		context.write(new Text(_key), new Text(four + ""));
-		context.write(new Text(_key), new Text(five + ""));
-		context.write(new Text(_key), new Text(six + ""));
-		context.write(new Text(_key), new Text(seven + ""));
-		context.write(new Text(_key), new Text(eight + ""));
-		context.write(new Text(_key), new Text(nine + ""));
+		context.write(new Text(_key), new TimeValueBean(one + "", time));
+		context.write(new Text(_key), new TimeValueBean(two + "", time));
+		context.write(new Text(_key), new TimeValueBean(three + "", time));
+		context.write(new Text(_key), new TimeValueBean(four + "", time));
+		context.write(new Text(_key), new TimeValueBean(five + "", time));
+		context.write(new Text(_key), new TimeValueBean(six + "", time));
+		context.write(new Text(_key), new TimeValueBean(seven + "", time));
+		context.write(new Text(_key), new TimeValueBean(eight + "", time));
+		context.write(new Text(_key), new TimeValueBean(nine + "", time));
 	}
 
 }

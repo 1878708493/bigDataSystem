@@ -175,5 +175,9 @@
 	<classpathentry kind="lib" path="/usr/local/hadoop/share/hadoop/common/hadoop-nfs-2.7.3.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop/share/hadoop/common/hadoop-common-2.7.3.jar"/>
 	<classpathentry kind="lib" path="lib/mysql-connector-java-5.1.6.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.3.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient/fluent-hc-4.2.5.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient/httpclient-cache-4.2.5.jar"/>
+	<classpathentry kind="lib" path="lib/httpclient/httpmime-4.2.5.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
