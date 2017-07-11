@@ -2,8 +2,10 @@ package com.edu.sdu.runner;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.InputStreamReader;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
@@ -25,8 +27,8 @@ import com.sdu.edu.bean.Sysmbol;
 public class RemainDevice {
 
 	public static void main(String[] args) {
-		Sysmbol.startDay = "2017-05-01.txt";
-		Sysmbol.endDay = "2017-05-03.txt";
+		Sysmbol.startDay = args[0];
+		Sysmbol.endDay = args[1];
 		try {
 			Configuration conf = new Configuration();
 			Job job = Job.getInstance(conf, "RemainDevice");
@@ -38,11 +40,11 @@ public class RemainDevice {
 			job.setMapOutputValueClass(RemainOprBean.class);// map阶段的输出的value
 			job.setOutputKeyClass(Text.class);
 			job.setOutputValueClass(Text.class);
-			FileInputFormat.addInputPath(job, new Path("/usr/local/hadoop/file/usr/"+Sysmbol.startDay));
-			FileInputFormat.addInputPath(job, new Path("/usr/local/hadoop/file/usr/"+Sysmbol.endDay));
+			FileInputFormat.addInputPath(job, new Path(args[2]));
+			FileInputFormat.addInputPath(job, new Path(args[3]));
 			
 			FileSystem fs2 = FileSystem.get(conf);
-			Path op2 = new Path("/usr/local/hadoop/file/RemainDevice");
+			Path op2 = new Path(args[4]);
 			if (fs2.exists(op2)) {
 				fs2.delete(op2, true);
 				System.out.println("存在此输出路径，已删除！！！");
@@ -52,18 +54,19 @@ public class RemainDevice {
 			
 			/*向数据库写数据操作*/
 			Database database = Database.getInstance();
-			FileReader file = new FileReader("/usr/local/hadoop/file/RemainDevice/part-r-00000");
-			BufferedReader bReader = new BufferedReader(file);
+			FileSystem fs0 = FileSystem.get(conf);
+			FSDataInputStream fdis = fs0.open(new Path(args[4] + "/part-r-00000"));
+			BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fdis));
 			
 			String str = null;
 			String start = Sysmbol.startDay.substring(0, Sysmbol.startDay.length() - 4);
-			String end = Sysmbol.endDay.substring(0, Sysmbol.startDay.length() - 4);
+			String end = Sysmbol.endDay.substring(0, Sysmbol.endDay.length() - 4);
 			System.out.println(start);
 			System.out.println(end);
 			String date = start;
 			int space = Tool.getSpaceDay(start, end);
 			boolean flag = false;
-			while ((str = bReader.readLine()) != null) {
+			while ((str = bufferedReader.readLine()) != null) {
 				String[] val = str.split("\\s+");
 				String app_key = val[0];
 				String count = val[1];

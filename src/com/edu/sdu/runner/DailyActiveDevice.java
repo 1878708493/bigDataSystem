@@ -3,8 +3,11 @@ package com.edu.sdu.runner;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataInputStream;
+import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.NullWritable;
@@ -96,7 +99,8 @@ public class DailyActiveDevice {
 	}
 
 	public static void main(String[] args) throws Exception {
-		Sysmbol.startDay = "2017-05-01.txt";
+		Sysmbol.startDay = args[0];
+		Sysmbol.endDay = args[1];
 		JobConf conf = new JobConf(DailyActiveDevice.class);
 		Configuration configuration = new Configuration();
 
@@ -119,8 +123,14 @@ public class DailyActiveDevice {
 		// job1的输入输出文件路径
 		/*FileInputFormat.addInputPath(job1, new Path(args[0]));
 		FileOutputFormat.setOutputPath(job1, new Path(args[1]));*/
-		FileInputFormat.addInputPath(job1, new Path("/usr/local/hadoop/file/usr/" + Sysmbol.startDay));
-		FileOutputFormat.setOutputPath(job1, new Path("/usr/local/hadoop/file/DailyActiveDeviceCache"));
+		FileInputFormat.addInputPath(job1, new Path(args[2]));
+		FileSystem fs2 = FileSystem.get(conf);
+		Path op2 = new Path(args[3]);
+		if (fs2.exists(op2)) {
+			fs2.delete(op2, true);
+			System.out.println("存在此输出路径，已删除！！！");
+		}
+		FileOutputFormat.setOutputPath(job1, op2);
 
 		// 第二个job的配置
 		Job job2 = Job.getInstance(configuration);
@@ -146,12 +156,18 @@ public class DailyActiveDevice {
 		ctrljob2.addDependingJob(ctrljob1);
 
 		// 输入路径是上一个作业的输出路径，因此这里填args[1],要和上面对应好
-		FileInputFormat.addInputPath(job2, new Path("/usr/local/hadoop/file/DailyActiveDeviceCache/part-r-00000"));
+		FileInputFormat.addInputPath(job2, new Path(args[3] + "/part-r-00000"));
 		//FileInputFormat.addInputPath(job2, new Path(args[1]));
 
 		// 输出路径从新传入一个参数，这里需要注意，因为我们最后的输出文件一定要是没有出现过得
 		// 因此我们在这里new Path(args[2])因为args[2]在上面没有用过，只要和上面不同就可以了
-		FileOutputFormat.setOutputPath(job2, new Path("/usr/local/hadoop/file/DailyActiveDevice"));
+		FileSystem fs3 = FileSystem.get(conf);
+		Path op3 = new Path(args[4]);
+		if (fs3.exists(op3)) {
+			fs3.delete(op3, true);
+			System.out.println("存在此输出路径，已删除！！！");
+		}
+		FileOutputFormat.setOutputPath(job2, op3);
 		//FileOutputFormat.setOutputPath(job2, new Path(args[2]));
 
 		// 主的控制容器，控制上面的总的两个子作业
@@ -176,14 +192,15 @@ public class DailyActiveDevice {
 		
 		/*向数据库写数据操作*/
 		Database database = Database.getInstance();
-		FileReader file = new FileReader("/usr/local/hadoop/file/DailyActiveDevice/part-r-00000");
-		BufferedReader bReader = new BufferedReader(file);
+		FileSystem fs0 = FileSystem.get(conf);
+		FSDataInputStream fdis = fs0.open(new Path(args[4] + "/part-r-00000"));
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fdis));
 		
 		String str = null;
 		boolean flag = false;
-		while ((str = bReader.readLine()) != null) {
+		while ((str = bufferedReader.readLine()) != null) {
 			String[] val = str.split("\\s+");
-			flag = database.updateAppCriticalData(val[0], 
+			flag = database.updateAppCriticalData(val[0],
 					"", "", "", val[2], "", "", val[1]);
 		}
 		System.out.println(flag);

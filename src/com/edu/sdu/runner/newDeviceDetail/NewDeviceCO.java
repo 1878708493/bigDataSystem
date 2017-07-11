@@ -25,7 +25,8 @@ import com.sdu.edu.bean.Sysmbol;
 public class NewDeviceCO {
 
 	public static void main(String[] args) {
-		Sysmbol.startDay = "2017-05-01.txt";
+		Sysmbol.startDay = args[0];
+		Sysmbol.endDay = args[1];
 		try {
 			Configuration conf = new Configuration();
 			Job job = Job.getInstance(conf, "NewDeviceCO");
@@ -37,10 +38,10 @@ public class NewDeviceCO {
 			job.setMapOutputValueClass(Text.class);// map阶段的输出的value
 			job.setOutputKeyClass(PlayerDeviceDetailBean.class);
 			job.setOutputValueClass(Text.class);
-			FileInputFormat.addInputPath(job, new Path("/usr/local/hadoop/file/usr/" + Sysmbol.startDay));
+			FileInputFormat.addInputPath(job, new Path(args[2]));
 			
 			FileSystem fs2 = FileSystem.get(conf);
-			Path op2 = new Path("/usr/local/hadoop/file/NewDeviceCO");
+			Path op2 = new Path(args[3]);
 			if (fs2.exists(op2)) {
 				fs2.delete(op2, true);
 				System.out.println("存在此输出路径，已删除！！！");
@@ -50,8 +51,8 @@ public class NewDeviceCO {
 
 			String fileName = Sysmbol.startDay.substring(0, Sysmbol.startDay.length() - 4) + 
 					"_nd_co.txt";
-			String filePath = "/usr/local/hadoop/file/NewDeviceCO/" + fileName;
-			WriteJson.doWriteFile("/usr/local/hadoop/file/NewDeviceCO/part-r-00000", filePath);
+			String filePath = args[3] + "/" + fileName;
+			WriteJson.doWriteFile(args[3] + "/part-r-00000", filePath);
 			
 			Net.upLoadJsonFile(filePath, fileName, "nd");
 		} catch (Exception e) {

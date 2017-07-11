@@ -5,7 +5,15 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintWriter;
+
+import org.apache.hadoop.conf.Configuration;
+import org.apache.hadoop.fs.FSDataInputStream;
+import org.apache.hadoop.fs.FSDataOutputStream;
+import org.apache.hadoop.fs.FileSystem;
+import org.apache.hadoop.fs.Path;
+
 import com.google.gson.*;
 
 public class WriteJson {
@@ -15,11 +23,10 @@ public class WriteJson {
 		/**
 		 * 输入文件、输出文件路径，根据情况改变路径
 		 * */
-/*		String inputPath = "/home/hduser/Downloads/json/new.txt";
-		String outputPath = "/home/hduser/Downloads/json/new02.txt";*/
-
-		File file = new File(inputPath);
-		BufferedReader reader = new BufferedReader(new FileReader(file));
+		Configuration conf = new Configuration();
+		FileSystem fs0 = FileSystem.get(conf);
+		FSDataInputStream fdis = fs0.open(new Path(inputPath));
+		BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(fdis));
 		String line = null;
 		JsonObject jsonObject = null;
 		JsonObject app_jsonObject;
@@ -30,8 +37,7 @@ public class WriteJson {
 		/**
 		 * 获取文件第一个APPKEY
 		 */
-		BufferedReader readerfirst = new BufferedReader(new FileReader(file));
-		String[] filesFirst = readerfirst.readLine().split("\t");
+		String[] filesFirst = bufferedReader.readLine().split("\t");
 		String firstline = null;
 		String app_keyfirst = filesFirst[0];
 		
@@ -41,7 +47,7 @@ public class WriteJson {
 		 * 获取一个APPKEY下面所拥有的value数量
 		 * */
 		int num = 1;
-		while ((firstline = readerfirst.readLine()) != null) {
+		while ((firstline = bufferedReader.readLine()) != null) {
 			String[] newfilesFirst = firstline.split("\t");
 			String m_app_key = newfilesFirst[0];
 			if (!app_keyfirst.equals(m_app_key)) {
@@ -56,7 +62,7 @@ public class WriteJson {
 		/**
 		 * 循环读取文件，构建JSON
 		 * */
-		while ((line = reader.readLine()) != null) {
+		while ((line = bufferedReader.readLine()) != null) {
 
 			String[] files = line.split("\t");
 
@@ -99,42 +105,16 @@ public class WriteJson {
 	}
 
 	/**
-	 * 读取TXT文件，以字符串返回
-	 */
-	public static String ReadFile(String path) {
-		File file = new File(path);
-		BufferedReader reader = null;
-		String laststr = "";
-		try {
-			reader = new BufferedReader(new FileReader(file));
-			String tempString = null;
-			while ((tempString = reader.readLine()) != null) {
-				laststr = laststr + tempString;
-			}
-			reader.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		} finally {
-			if (reader != null) {
-				try {
-					reader.close();
-				} catch (IOException e1) {
-				}
-			}
-		}
-		return laststr;
-	}
-
-	/**
 	 * 将JSON格式信息写入文件（需要将JSON信息转化成string类型）
 	 */
 	public static void writeFile(String filePath, String sets) throws IOException {
-		FileWriter fw = new FileWriter(filePath);
-		PrintWriter out = new PrintWriter(fw);
-		out.write(sets);
-		out.println();
-		fw.close();
-		out.close();
+		Configuration conf = new Configuration();
+		FileSystem fs0 = FileSystem.get(conf);
+		FSDataOutputStream fdos = fs0.create(new Path(filePath));
+		byte[] readBuf = sets.getBytes("UTF-8");
+		fdos.write(readBuf, 0, readBuf.length);
+		fdos.close();
+		fs0.close();
 	}
 
 }
