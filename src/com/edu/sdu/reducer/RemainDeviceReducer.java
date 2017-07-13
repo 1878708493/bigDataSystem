@@ -6,8 +6,8 @@ import java.util.HashMap;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-import com.sdu.edu.bean.PlayerDeviceDetailBean;
-import com.sdu.edu.bean.RemainOprBean;
+import com.edu.sdu.bean.PlayerDeviceDetailBean;
+import com.edu.sdu.bean.RemainOprBean;
 import com.sun.javafx.collections.MappingChange.Map;
 
 public class RemainDeviceReducer extends Reducer<Text, RemainOprBean, Text, Text> {

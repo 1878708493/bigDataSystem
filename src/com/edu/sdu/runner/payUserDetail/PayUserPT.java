@@ -8,13 +8,13 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
+import com.edu.sdu.bean.PlayerDeviceDetailBean;
+import com.edu.sdu.bean.Sysmbol;
 import com.edu.sdu.mapper.payUserDetail.PayUserOSMapper;
 import com.edu.sdu.mapper.payUserDetail.PayUserPTMapper;
 import com.edu.sdu.reducer.DetailReducer;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
-import com.sdu.edu.bean.PlayerDeviceDetailBean;
-import com.sdu.edu.bean.Sysmbol;
 
 public class PayUserPT {
 	public static void main(String[] args) {

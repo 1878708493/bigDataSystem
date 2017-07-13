@@ -7,7 +7,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.Reducer.Context;
 
-import com.sdu.edu.bean.RemainOprBean;
+import com.edu.sdu.bean.RemainOprBean;
 
 public class RemainUserReducer extends Reducer<Text, RemainOprBean, Text, Text> {
 

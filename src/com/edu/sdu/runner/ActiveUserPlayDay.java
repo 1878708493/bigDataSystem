@@ -13,12 +13,12 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
+import com.edu.sdu.bean.Sysmbol;
 import com.edu.sdu.mapper.ActiveDevicePlayDayMapper;
 import com.edu.sdu.mapper.ActiveUserPlayDayMapper;
 import com.edu.sdu.reducer.ActiveDevicePlayDayReducer;
 import com.edu.sdu.reducer.ActiveUserPlayDayReducer;
 import com.edu.sdu.util.Database;
-import com.sdu.edu.bean.Sysmbol;
 
 public class ActiveUserPlayDay {
 

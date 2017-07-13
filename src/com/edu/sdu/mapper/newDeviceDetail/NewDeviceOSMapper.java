@@ -7,7 +7,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.apache.hadoop.mapreduce.Mapper.Context;
 
-import com.sdu.edu.bean.PlayerDeviceDetailBean;
+import com.edu.sdu.bean.PlayerDeviceDetailBean;
 
 public class NewDeviceOSMapper extends Mapper<LongWritable, Text, PlayerDeviceDetailBean, Text> {
 

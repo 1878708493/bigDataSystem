@@ -1,4 +1,4 @@
-package com.sdu.edu.bean;
+package com.edu.sdu.bean;
 
 public class Sysmbol {
 	public static String startDay;

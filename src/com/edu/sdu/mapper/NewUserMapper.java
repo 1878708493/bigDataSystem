@@ -12,8 +12,8 @@ import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 import org.apache.hadoop.util.GenericOptionsParser;
 
+import com.edu.sdu.bean.TimeValueBean;
 import com.edu.sdu.reducer.DedupReducer;
-import com.sdu.edu.bean.TimeValueBean;
 
 /**
  * 获取新用户使用时长的mapper

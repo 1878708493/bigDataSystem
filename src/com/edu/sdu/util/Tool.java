@@ -28,4 +28,41 @@ public class Tool {
 		}
 		return Integer.parseInt(String.valueOf(between_days));
 	}
+
+	public static String getPreNdayDate(String date, int days) {
+		Calendar calendar = Calendar.getInstance();
+		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
+		String three_days_ago = null;
+		try {
+			Date cur = sdf1.parse(date);
+			calendar.setTime(cur);
+			calendar.add(Calendar.DATE, -days);
+			three_days_ago = sdf1.format(calendar.getTime());
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		return three_days_ago;
+	}
+	
+	public static boolean getIsAlertOrNot(int predata, int curdata, int percent, int trigger) {
+		int differ = Math.abs(curdata - predata);
+		if(trigger == 0) {// 小于
+			if(differ < (predata * percent / 100)){
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+		else {
+			if(differ > (predata * percent / 100)){
+				return true;
+			}
+			else {
+				return false;
+			}
+		}
+	}
 }

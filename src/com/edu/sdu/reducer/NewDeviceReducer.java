@@ -6,7 +6,7 @@ import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 
-import com.sdu.edu.bean.TimeValueBean;
+import com.edu.sdu.bean.TimeValueBean;
 
 public class NewDeviceReducer extends Reducer<Text, TimeValueBean, Text, TimeValueBean> {
 	@Override

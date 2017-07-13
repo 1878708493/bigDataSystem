@@ -8,7 +8,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-import com.sdu.edu.bean.PlayerDeviceDetailBean;
+import com.edu.sdu.bean.PlayerDeviceDetailBean;
 
 public class PayUserCIMapper extends Mapper<LongWritable, Text, PlayerDeviceDetailBean, Text> {
 

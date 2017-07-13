@@ -6,7 +6,7 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.output.MultipleOutputs;
 
-import com.sdu.edu.bean.AreaOrderBean;
+import com.edu.sdu.bean.AreaOrderBean;
 
 public class AreaCountReducer extends Reducer<AreaOrderBean, Text, AreaOrderBean, Text> {
 

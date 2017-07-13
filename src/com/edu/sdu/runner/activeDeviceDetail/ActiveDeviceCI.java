@@ -14,13 +14,13 @@ import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
+import com.edu.sdu.bean.PlayerDeviceDetailBean;
+import com.edu.sdu.bean.Sysmbol;
 import com.edu.sdu.mapper.activeDeviceDetail.ActiveDeviceCIMapper;
 import com.edu.sdu.reducer.DetailReducer;
 import com.edu.sdu.util.Database;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
-import com.sdu.edu.bean.PlayerDeviceDetailBean;
-import com.sdu.edu.bean.Sysmbol;
 
 import java.io.File;
 import java.io.IOException;

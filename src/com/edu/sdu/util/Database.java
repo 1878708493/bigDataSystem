@@ -17,6 +17,9 @@ import org.apache.http.entity.mime.content.FileBody;
 import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
+import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
+
+import com.sun.jersey.core.util.StringIgnoreCaseKeyComparator;
 
 public class Database {
 	private static Connection conn;
@@ -186,7 +189,7 @@ public class Database {
 	}
 
 	public boolean updateRemainDevice(String app_key, String date, String today, String oneday, String twoday,
-			String threeday, String fourday, String fiveday, String sixday, String sevenday) {
+			String threeday, String fourday, String fiveday, String sixday, String sevenday, String fourteenday, String thirtyday) {
 		int i = 0;
 		try {
 			String str = "select * from survive_device where app_key='" + app_key + "' and date='" + date + "'";
@@ -245,14 +248,27 @@ public class Database {
 					length++;
 					str = str.concat(" t.7day='" + sevenday + "'");
 				}
+				if (!fourteenday.equals("")) {
+					if (length > 0)
+						str = str.concat(",");
+					length++;
+					str = str.concat(" t.14day='" + fourteenday + "'");
+				}
+				if (!thirtyday.equals("")) {
+					if (length > 0)
+						str = str.concat(",");
+					length++;
+					str = str.concat(" t.30day='" + thirtyday + "'");
+				}
 				str = str.concat(" where t.app_key='" + app_key + "' and t.date='" + date + "'");
 				PreparedStatement update = conn.prepareStatement(str);
 				update.execute();
 				update.close();
 			} else {
-				str = "insert into survive_device(app_key, today, 1day, 2day, 3day, 4day, 5day, 6day, 7day, date)values('"
+				str = "insert into survive_device(app_key, today, 1day, 2day, 3day, 4day, 5day, 6day, 7day, 14day, 30day, date)values('"
 						+ app_key + "', '" + today + "', '" + oneday + "', '" + twoday + "', '" + threeday + "', '"
-						+ fourday + "', '" + fiveday + "', '" + sixday + "', '" + sevenday + "', '" + date + "')";
+						+ fourday + "', '" + fiveday + "', '" + sixday + "', '" + sevenday + "', '" + fourteenday + "', '" + 
+						thirtyday + "', '" + date + "')";
 				state.executeUpdate(str);
 				state.close();
 			}
@@ -263,7 +279,7 @@ public class Database {
 	}
 
 	public boolean updateRemainUser(String app_key, String date, String today, String oneday, String twoday,
-			String threeday, String fourday, String fiveday, String sixday, String sevenday) {
+			String threeday, String fourday, String fiveday, String sixday, String sevenday, String fourteenday, String thirtyday) {
 		int i = 0;
 		try {
 			String str = "select * from survive_user where app_key='" + app_key + "' and date='" + date + "'";
@@ -322,14 +338,27 @@ public class Database {
 					length++;
 					str = str.concat(" t.7day='" + sevenday + "'");
 				}
+				if (!fourteenday.equals("")) {
+					if (length > 0)
+						str = str.concat(",");
+					length++;
+					str = str.concat(" t.14day='" + fourteenday + "'");
+				}
+				if (!thirtyday.equals("")) {
+					if (length > 0)
+						str = str.concat(",");
+					length++;
+					str = str.concat(" t.30day='" + thirtyday + "'");
+				}
 				str = str.concat(" where t.app_key='" + app_key + "' and t.date='" + date + "'");
 				PreparedStatement update = conn.prepareStatement(str);
 				update.execute();
 				update.close();
 			} else {
-				str = "insert into survive_user(app_key, today, 1day, 2day, 3day, 4day, 5day, 6day, 7day, date)values('"
+				str = "insert into survive_user(app_key, today, 1day, 2day, 3day, 4day, 5day, 6day, 7day, 14day, 30day, date)values('"
 						+ app_key + "', '" + today + "', '" + oneday + "', '" + twoday + "', '" + threeday + "', '"
-						+ fourday + "', '" + fiveday + "', '" + sixday + "', '" + sevenday + "', '" + date + "')";
+						+ fourday + "', '" + fiveday + "', '" + sixday + "', '" + sevenday + "', '" + fourteenday + "', '" + 
+						thirtyday + "', '" + date + "')";
 				state.executeUpdate(str);
 				state.close();
 			}
@@ -474,5 +503,91 @@ public class Database {
 			e.printStackTrace();
 		}
 		return true;
+	}
+	
+	public String[] getAlertData(String app_key, String item) {
+		String str = "select * from alert where app_key='" + app_key + "' and item='" + item + "'";
+		String limitdata[] = new String[4];
+		Statement state;
+		try {
+			state = conn.createStatement();
+			ResultSet rs = state.executeQuery(str);
+			if(rs.next()){
+				limitdata[0] = rs.getInt(1) + "";
+				limitdata[1] = rs.getInt(4) + "";
+				limitdata[2] = rs.getString(6);
+				limitdata[3] = rs.getInt(7) + "";
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return limitdata;
+	}
+	
+	public String[] getAppCriticalData(String app_key, String date) {
+		String str = "select * from app_critical_data where app_key='" + app_key + "' and datetime='" + date + "'";
+		String criticaldata[] = new String[4];
+		Statement state;
+		try {
+			state = conn.createStatement();
+			ResultSet rs = state.executeQuery(str);
+			if(rs.next()){
+				criticaldata[0] = rs.getString(5); // 新增用户
+				criticaldata[1] = rs.getString(6); // 新增设备
+				criticaldata[2] = rs.getString(7); // 活跃用户
+				criticaldata[3] = rs.getString(8); // 活跃设备
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return criticaldata;
+	}
+	
+	public boolean updateDownload(String app_key, String count, String date) {
+		int i = 0;
+		try {
+			String str = "select * from download where app_key='" + app_key + "' and date='" + date + "'";
+			Statement state = conn.createStatement();
+			ResultSet rs = state.executeQuery(str);
+
+			while (rs.next()) {
+				i++;
+			}
+			if (i > 0) { // 有这条数据,只用更新就行
+				str = "update download set " + "count='" + count + "'";
+				str = str.concat(" where app_key='" + app_key + "' and date='" + date + "'");
+				// System.out.println(str);
+				PreparedStatement update = conn.prepareStatement(str);
+				update.execute();
+				update.close();
+			} else {
+				str = "insert into download(app_key, count, date)values('" + app_key + "', '"
+						+ count + "', '" + date + "')";
+				state.executeUpdate(str);
+				state.close();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return true;
+	}
+	
+	public String getDownloadCount(String app_key, String date) {
+		String str = "select * from download where app_key='" + app_key + "' and date='" + date + "'";
+		String count = null;
+		Statement state;
+		try {
+			state = conn.createStatement();
+			ResultSet rs = state.executeQuery(str);
+			if(rs.next()){
+				count = rs.getString(3); // 下载数
+			}
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return count;
 	}
 }

@@ -6,7 +6,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-import com.sdu.edu.bean.PlayerDeviceDetailBean;
+import com.edu.sdu.bean.PlayerDeviceDetailBean;
 
 /**
  * PT:phone type
