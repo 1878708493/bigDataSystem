@@ -16,6 +16,11 @@ import com.edu.sdu.reducer.DetailReducer;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
+/**
+ * 付费用户 运营商统计
+ * @author 王宁
+ *
+ */
 public class PayUserCO {
 
 	public static void main(String[] args) {

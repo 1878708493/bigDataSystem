@@ -7,6 +7,11 @@ import java.io.IOException;
 import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 
+/**
+ * key和value比较的实体,用来做mapper的输出key值
+ * @author 王宁
+ *
+ */
 public class PlayerDeviceDetailBean implements Writable, WritableComparable<PlayerDeviceDetailBean>{
 	public String device;
 	public String key;
@@ -43,7 +48,6 @@ public class PlayerDeviceDetailBean implements Writable, WritableComparable<Play
 
 	@Override
 	public int compareTo(PlayerDeviceDetailBean o) {
-		// TODO Auto-generated method stub
 		String key = o.key;
 		String device = o.device;
 		if(this.key.compareTo(key) < 0){

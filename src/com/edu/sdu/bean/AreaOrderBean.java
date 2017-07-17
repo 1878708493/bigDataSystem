@@ -6,6 +6,11 @@ import java.io.IOException;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.WritableComparable;
 
+/**
+ * 地区实体
+ * @author 李安修
+ *
+ */
 public class AreaOrderBean implements WritableComparable<AreaOrderBean> {
 	private String app_key;// appkey
 	private String city;// 城市

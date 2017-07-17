@@ -8,7 +8,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import com.edu.sdu.bean.PlayerDeviceDetailBean;
 
 /**
- * 所有详情信息的reducer
+ * 所有详情信息(detail包)的reducer
  * @author 王宁
  *
  */

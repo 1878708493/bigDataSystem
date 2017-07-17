@@ -10,6 +10,11 @@ import org.apache.hadoop.mapreduce.Mapper;
 import com.edu.sdu.bean.AreaOrderBean;
 import com.sun.xml.internal.ws.message.StringHeader;
 
+/**
+ * 地区分布的mapper
+ * @author 李安修
+ *
+ */
 public class AreaCountMapper extends Mapper<LongWritable, Text, AreaOrderBean, Text> {
 	
 	@Override

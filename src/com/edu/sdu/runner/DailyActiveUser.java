@@ -26,7 +26,7 @@ import com.edu.sdu.util.Net;
 import com.edu.sdu.util.Tool;
 
 /**
- * function 日活跃用户
+ * 日活跃用户
  * 
  * @author 谢世杰
  */

@@ -22,6 +22,11 @@ import com.edu.sdu.reducer.RemainUserReducer;
 import com.edu.sdu.util.Database;
 import com.edu.sdu.util.Tool;
 
+/**
+ * 留存用户统计
+ * @author 王宁
+ *
+ */
 public class RemainUser {
 
 	public static void main(String[] args) {

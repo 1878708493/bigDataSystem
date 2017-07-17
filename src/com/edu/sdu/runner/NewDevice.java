@@ -20,6 +20,11 @@ import com.edu.sdu.mapper.NewDeviceMapper;
 import com.edu.sdu.reducer.NewDeviceReducer;
 import com.edu.sdu.util.Database;
 
+/**
+ * 新设备首次使用时长
+ * @author 杜仲楠
+ *
+ */
 public class NewDevice {
 	public static void main(String[] args) throws Exception {
 		Sysmbol.startDay = args[0];

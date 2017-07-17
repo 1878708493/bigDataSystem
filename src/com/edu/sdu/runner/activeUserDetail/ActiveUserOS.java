@@ -17,6 +17,11 @@ import com.edu.sdu.runner.activeDeviceDetail.ActiveDeviceOS;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
+/**
+ * 活跃用户 操作系统统计
+ * @author 王宁
+ *
+ */
 public class ActiveUserOS {
 	public static void main(String[] args) {
 		Sysmbol.startDay = args[0];

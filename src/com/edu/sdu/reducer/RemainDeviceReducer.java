@@ -10,6 +10,11 @@ import com.edu.sdu.bean.PlayerDeviceDetailBean;
 import com.edu.sdu.bean.RemainOprBean;
 import com.sun.javafx.collections.MappingChange.Map;
 
+/**
+ * 留存设备统计的reducer
+ * @author 王宁
+ *
+ */
 public class RemainDeviceReducer extends Reducer<Text, RemainOprBean, Text, Text> {
 
 	java.util.Map<String, String> map = new HashMap<>();

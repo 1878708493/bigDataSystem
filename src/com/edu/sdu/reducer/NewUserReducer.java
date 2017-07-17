@@ -9,7 +9,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import com.edu.sdu.bean.TimeValueBean;
 
 /**
- * 获取新用户数量的reducer
+ * 新用户首次使用时长统计的reducer
  * @author 王宁
  *
  */

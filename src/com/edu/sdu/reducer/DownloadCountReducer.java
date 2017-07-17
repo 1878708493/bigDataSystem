@@ -8,6 +8,11 @@ import org.apache.hadoop.mapreduce.Reducer.Context;
 
 import com.edu.sdu.bean.TimeValueBean;
 
+/**
+ * 下载量统计的reducer
+ * @author 王宁
+ *
+ */
 public class DownloadCountReducer extends Reducer<Text, TimeValueBean, Text, TimeValueBean> {
 
 	public void reduce(Text _key, Iterable<TimeValueBean> values, Context context) throws IOException, InterruptedException {

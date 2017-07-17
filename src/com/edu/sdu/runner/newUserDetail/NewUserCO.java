@@ -19,7 +19,7 @@ import com.edu.sdu.util.WriteJson;
 
 /**
  * 
- * 新用户 运营商
+ * 新用户 运营商统计
  * @author 王宁
  *
  */

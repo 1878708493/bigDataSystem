@@ -5,6 +5,11 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+/**
+ * 工具类
+ * @author 王宁
+ *
+ */
 public class Tool {
 
 	/*
@@ -29,6 +34,9 @@ public class Tool {
 		return Integer.parseInt(String.valueOf(between_days));
 	}
 
+	/*
+	 * 获取date这一天前days天的日期
+	 */
 	public static String getPreNdayDate(String date, int days) {
 		Calendar calendar = Calendar.getInstance();
 		SimpleDateFormat sdf1 = new SimpleDateFormat("yyyy-MM-dd");
@@ -46,6 +54,9 @@ public class Tool {
 		return three_days_ago;
 	}
 	
+	/*
+	 * 获取是否需要预警
+	 */
 	public static boolean getIsAlertOrNot(int predata, int curdata, int percent, int trigger) {
 		int differ = Math.abs(curdata - predata);
 		if(trigger == 0) {// 小于

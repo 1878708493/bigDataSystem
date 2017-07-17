@@ -11,6 +11,11 @@ import org.apache.hadoop.mapreduce.Mapper.Context;
 
 import com.edu.sdu.bean.PlayerDeviceDetailBean;
 
+/**
+ * 支付设备联网方式统计的mapper
+ * @author 王宁
+ *
+ */
 public class PayDeviceCIMapper extends Mapper<LongWritable, Text, PlayerDeviceDetailBean, Text> {
 
 	Map<String, String> map = new HashMap<>();

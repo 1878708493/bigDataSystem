@@ -34,7 +34,7 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.util.EntityUtils;
 
 /**
- * 活跃设备 联网方式
+ * 活跃设备 联网方式统计
  * @author 王宁
  *
  */

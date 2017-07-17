@@ -18,7 +18,7 @@ import com.edu.sdu.util.WriteJson;
 
 /**
  * 
- * 新设备 运营商
+ * 新设备 运营商统计
  * @author 王宁
  *
  */

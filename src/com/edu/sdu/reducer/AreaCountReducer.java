@@ -8,6 +8,11 @@ import org.apache.hadoop.mapreduce.lib.output.MultipleOutputs;
 
 import com.edu.sdu.bean.AreaOrderBean;
 
+/**
+ * 地区分布的reducer
+ * @author 李安修
+ *
+ */
 public class AreaCountReducer extends Reducer<AreaOrderBean, Text, AreaOrderBean, Text> {
 
 	@Override

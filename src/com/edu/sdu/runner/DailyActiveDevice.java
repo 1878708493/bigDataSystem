@@ -29,7 +29,7 @@ import com.edu.sdu.util.Net;
 import com.edu.sdu.util.Tool;
 
 /**
- * function 日活跃设备
+ * 日活跃设备
  * 
  * @author 谢世杰
  */

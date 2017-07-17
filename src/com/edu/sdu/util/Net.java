@@ -19,8 +19,16 @@ import org.apache.http.entity.mime.content.StringBody;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.util.EntityUtils;
 
+/**
+ * 网络请求类
+ * @author 王宁
+ *
+ */
 public class Net {
 
+	/*
+	 * 上传json文件类
+	 */
 	public static void upLoadJsonFile(String filePath, String fileName, String xx) {
 		HttpClient httpClient = null;
 		try {
@@ -69,6 +77,9 @@ public class Net {
 		}
 	}
 
+	/*
+	 * 请求发送邮件类
+	 */
 	public static void sendMail(String id) {
 		HttpClient httpClient = null;
 		try {

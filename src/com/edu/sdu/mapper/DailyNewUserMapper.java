@@ -12,6 +12,11 @@ import org.apache.hadoop.mapreduce.Mapper;
 import com.edu.sdu.bean.TimeValueBean;
 import com.edu.sdu.runner.DailyNewUser;
 
+/**
+ * 日新增用户的mapper
+ * @author 王宁
+ *
+ */
 public class DailyNewUserMapper extends Mapper<LongWritable, Text, Text, TimeValueBean> {
 
 	public void map(LongWritable ikey, Text ivalue, Context context) throws IOException, InterruptedException {

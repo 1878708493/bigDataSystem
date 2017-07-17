@@ -11,6 +11,11 @@ import org.apache.hadoop.mapreduce.Mapper.Context;
 
 import com.edu.sdu.bean.PlayerDeviceDetailBean;
 
+/**
+ * 活跃设备运营商统计的mapper
+ * @author 王宁
+ *
+ */
 public class ActiveDeviceCOMapper extends Mapper<LongWritable, Text, PlayerDeviceDetailBean, Text> {
 
 	Map<String, String> map = new HashMap<>();

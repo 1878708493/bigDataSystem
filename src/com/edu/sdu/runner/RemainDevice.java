@@ -21,7 +21,7 @@ import com.edu.sdu.util.Database;
 import com.edu.sdu.util.Tool;
 
 /**
- * 留存设备计算
+ * 留存设备统计
  * @author 王宁
  *
  */

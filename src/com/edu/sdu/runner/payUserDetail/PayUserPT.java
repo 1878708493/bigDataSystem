@@ -16,6 +16,11 @@ import com.edu.sdu.reducer.DetailReducer;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
+/**
+ * 付费用户 设备型号统计
+ * @author 王宁
+ *
+ */
 public class PayUserPT {
 	public static void main(String[] args) {
 		Sysmbol.startDay = args[0];

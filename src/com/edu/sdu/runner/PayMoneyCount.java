@@ -22,6 +22,11 @@ import com.edu.sdu.reducer.PayMoneyReducer;
 import com.edu.sdu.util.Database;
 import com.edu.sdu.util.Net;
 
+/**
+ * 支付金额数统计
+ * @author 王宁
+ *
+ */
 public class PayMoneyCount {
 
 	public static void main(String[] args) {

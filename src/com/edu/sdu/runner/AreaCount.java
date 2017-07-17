@@ -26,6 +26,11 @@ import com.edu.sdu.reducer.DailyNewDeviceReducer;
 import com.edu.sdu.reducer.RemainDeviceReducer;
 import com.edu.sdu.util.Database;
 
+/**
+ * 地区分布
+ * @author 李安修
+ *
+ */
 public class AreaCount {
 	
 	public static void main(String[] args) throws Exception {

@@ -22,6 +22,11 @@ import com.edu.sdu.reducer.DailyNewUserReducer;
 import com.edu.sdu.reducer.PayUserCountReducer;
 import com.edu.sdu.util.Database;
 
+/**
+ * 支付人数统计
+ * @author 王宁
+ *
+ */
 public class PayUserCount {
 
 	public static void main(String[] args) {

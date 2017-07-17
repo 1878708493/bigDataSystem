@@ -22,6 +22,11 @@ import com.edu.sdu.util.Database;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.Tool;
 
+/**
+ * 下载量统计
+ * @author 王宁
+ *
+ */
 public class DownloadCount {
 
 	public static void main(String[] args) {

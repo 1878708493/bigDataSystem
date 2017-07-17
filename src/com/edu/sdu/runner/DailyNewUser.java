@@ -26,8 +26,8 @@ import com.edu.sdu.util.Database;
 import com.edu.sdu.util.Tool;
 
 /**
- * 
- * @author hadoop
+ * 日新增用户统计
+ * @author 王宁
  *
  */
 public class DailyNewUser {

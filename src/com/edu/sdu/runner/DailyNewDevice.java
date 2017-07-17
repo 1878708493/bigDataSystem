@@ -1,9 +1,7 @@
 package com.edu.sdu.runner;
 
 import java.io.BufferedReader;
-import java.io.FileReader;
 import java.io.InputStreamReader;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.hadoop.conf.Configuration;
@@ -11,31 +9,23 @@ import org.apache.hadoop.fs.FSDataInputStream;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapred.JobConf;
 import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
-import org.apache.hadoop.mapreduce.lib.jobcontrol.ControlledJob;
-import org.apache.hadoop.mapreduce.lib.jobcontrol.JobControl;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
-import org.apache.hadoop.metrics2.sink.ganglia.AbstractGangliaSink;
 
 import com.edu.sdu.bean.Sysmbol;
 import com.edu.sdu.bean.TimeValueBean;
 import com.edu.sdu.mapper.DailyNewDeviceMapper;
-import com.edu.sdu.mapper.DailyNewUserMapper;
-import com.edu.sdu.mapper.DedupMapper;
-import com.edu.sdu.mapper.DeviceDupMapper;
-import com.edu.sdu.mapper.NewUserMapper;
 import com.edu.sdu.reducer.DailyNewDeviceReducer;
-import com.edu.sdu.reducer.DailyNewUserReducer;
-import com.edu.sdu.reducer.DedupReducer;
-import com.edu.sdu.reducer.DeviceDupReducer;
-import com.edu.sdu.reducer.NewUserReducer;
 import com.edu.sdu.util.Database;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.Tool;
-import com.sun.java_cup.internal.runtime.Symbol;
 
+/**
+ * 日新增设备统计
+ * @author 王宁
+ *
+ */
 public class DailyNewDevice {
 
 	public static Date startDate;

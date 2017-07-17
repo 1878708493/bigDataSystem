@@ -15,6 +15,11 @@ import com.edu.sdu.reducer.DetailReducer;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
+/**
+ * 活跃设备 运营商统计
+ * @author 王宁
+ *
+ */
 public class ActiveDeviceCO {
 
 	public static void main(String[] args) {

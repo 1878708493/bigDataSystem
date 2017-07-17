@@ -20,6 +20,11 @@ import com.edu.sdu.reducer.ActiveDevicePlayDayReducer;
 import com.edu.sdu.reducer.ActiveUserPlayDayReducer;
 import com.edu.sdu.util.Database;
 
+/**
+ * 活跃用户使用天数统计
+ * @author 王宁
+ *
+ */
 public class ActiveUserPlayDay {
 
 	public static void main(String[] args) {

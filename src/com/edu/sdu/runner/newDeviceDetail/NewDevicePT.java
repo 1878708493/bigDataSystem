@@ -19,7 +19,7 @@ import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
 /**
- * 新设备 设备型号
+ * 新设备 设备型号统计
  * @author 王宁
  *
  */

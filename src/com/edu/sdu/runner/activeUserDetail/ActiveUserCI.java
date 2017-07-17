@@ -18,7 +18,7 @@ import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
 /**
- * 活跃用户 联网方式
+ * 活跃用户 联网方式统计
  * @author 王宁
  *
  */

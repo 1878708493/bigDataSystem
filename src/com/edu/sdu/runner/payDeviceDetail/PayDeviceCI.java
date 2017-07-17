@@ -17,6 +17,11 @@ import com.edu.sdu.runner.payUserDetail.PayUserCI;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
+/**
+ * 支付设备 联网方式统计
+ * @author 王宁
+ *
+ */
 public class PayDeviceCI {
 
 	public static void main(String[] args) {

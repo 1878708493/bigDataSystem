@@ -11,6 +11,11 @@ import org.apache.hadoop.mapreduce.Mapper.Context;
 
 import com.edu.sdu.bean.PlayerDeviceDetailBean;
 
+/**
+ * 支付用户设备型号统计的mapper
+ * @author 王宁
+ *
+ */
 public class PayUserPTMapper extends Mapper<LongWritable, Text, PlayerDeviceDetailBean, Text> {
 
 	Map<String, String> map = new HashMap<>();

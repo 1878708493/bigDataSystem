@@ -21,6 +21,11 @@ import org.omg.CosNaming.NamingContextExtPackage.StringNameHelper;
 
 import com.sun.jersey.core.util.StringIgnoreCaseKeyComparator;
 
+/**
+ * 所有的数据库操作类
+ * @author 王宁
+ *
+ */
 public class Database {
 	private static Connection conn;
 	private static Database datamain;
@@ -47,6 +52,9 @@ public class Database {
 		}
 	}
 
+	/*
+	 * 更新app_critical_data表
+	 */
 	public boolean updateAppCriticalData(String app_key, String newUser, String newDevice, String activeUser,
 			String activeDevice, String payCount, String payMoney, String datetime) {
 		int i = 0;
@@ -114,6 +122,9 @@ public class Database {
 		return true;
 	}
 
+	/*
+	 * 更新new_user表
+	 */
 	public boolean updateNewUserData(String app_key, String one_fours, String five_tens, String eleven_thirtys,
 			String thirty_sixtys, String one_threem, String four_tenm, String eleven_thirtym, String thirty_sixtym,
 			String sixtym_more, String datetime) {
@@ -151,6 +162,9 @@ public class Database {
 		return true;
 	}
 
+	/*
+	 * 更新new_device表
+	 */
 	public boolean updateNewDeviceData(String app_key, String one_fours, String five_tens, String eleven_thirtys,
 			String thirty_sixtys, String one_threem, String four_tenm, String eleven_thirtym, String thirty_sixtym,
 			String sixtym_more, String datetime) {
@@ -188,6 +202,9 @@ public class Database {
 		return true;
 	}
 
+	/*
+	 * 更新survive_device表
+	 */
 	public boolean updateRemainDevice(String app_key, String date, String today, String oneday, String twoday,
 			String threeday, String fourday, String fiveday, String sixday, String sevenday, String fourteenday, String thirtyday) {
 		int i = 0;
@@ -278,6 +295,9 @@ public class Database {
 		return true;
 	}
 
+	/*
+	 * 更新survive_user表
+	 */
 	public boolean updateRemainUser(String app_key, String date, String today, String oneday, String twoday,
 			String threeday, String fourday, String fiveday, String sixday, String sevenday, String fourteenday, String thirtyday) {
 		int i = 0;
@@ -368,6 +388,9 @@ public class Database {
 		return true;
 	}
 
+	/*
+	 * 更新area表
+	 */
 	public boolean updateArea(String app_key, String area, String newDevCount, String newUserCount, String date) {
 		int i = 0;
 		try {
@@ -399,6 +422,9 @@ public class Database {
 		return true;
 	}
 
+	/*
+	 * 更新active_device表
+	 */
 	public boolean updateActiveDevice(String app_key, String one, String twoToThree, String fourToSeven,
 			String eightToFourteen, String fifteenToThirty, String ThirtyOneToNinty) {
 		int i = 0;
@@ -432,6 +458,9 @@ public class Database {
 		return true;
 	}
 
+	/*
+	 * 更新active_user表
+	 */
 	public boolean updateActiveUser(String app_key, String one, String twoToThree, String fourToSeven,
 			String eightToFourteen, String fifteenToThirty, String ThirtyOneToNinty) {
 		int i = 0;
@@ -465,6 +494,9 @@ public class Database {
 		return true;
 	}
 	
+	/*
+	 * 更新pay表
+	 */
 	public boolean updatePayUser(String app_key, String user_totle_count, String money, String datetime) {
 		int i = 0;
 		try {
@@ -505,6 +537,9 @@ public class Database {
 		return true;
 	}
 	
+	/*
+	 * 获取预警信息
+	 */
 	public String[] getAlertData(String app_key, String item) {
 		String str = "select * from alert where app_key='" + app_key + "' and item='" + item + "'";
 		String limitdata[] = new String[4];
@@ -525,6 +560,9 @@ public class Database {
 		return limitdata;
 	}
 	
+	/*
+	 * 获取APP关键数据
+	 */
 	public String[] getAppCriticalData(String app_key, String date) {
 		String str = "select * from app_critical_data where app_key='" + app_key + "' and datetime='" + date + "'";
 		String criticaldata[] = new String[4];
@@ -545,6 +583,9 @@ public class Database {
 		return criticaldata;
 	}
 	
+	/*
+	 * 更新download表
+	 */
 	public boolean updateDownload(String app_key, String count, String date) {
 		int i = 0;
 		try {
@@ -574,6 +615,9 @@ public class Database {
 		return true;
 	}
 	
+	/*
+	 * 获取下载量
+	 */
 	public String getDownloadCount(String app_key, String date) {
 		String str = "select * from download where app_key='" + app_key + "' and date='" + date + "'";
 		String count = null;

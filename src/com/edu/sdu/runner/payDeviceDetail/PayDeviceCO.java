@@ -15,6 +15,11 @@ import com.edu.sdu.reducer.DetailReducer;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
+/**
+ * 支付设备 运营商统计
+ * @author 王宁
+ *
+ */
 public class PayDeviceCO {
 
 	public static void main(String[] args) {

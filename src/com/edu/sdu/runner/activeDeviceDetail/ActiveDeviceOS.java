@@ -17,6 +17,11 @@ import com.edu.sdu.runner.newDeviceDetail.NewDeviceOS;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
+/**
+ * 活跃设备 操作系统统计
+ * @author 王宁
+ *
+ */
 public class ActiveDeviceOS {
 
 	public static void main(String[] args) {

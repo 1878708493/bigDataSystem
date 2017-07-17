@@ -15,6 +15,11 @@ import com.edu.sdu.reducer.DetailReducer;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
+/**
+ * 活跃用户 设备型号统计
+ * @author 王宁
+ *
+ */
 public class ActiveUserPT {
 
 	public static void main(String[] args) {

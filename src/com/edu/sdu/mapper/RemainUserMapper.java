@@ -10,6 +10,11 @@ import org.apache.hadoop.mapreduce.lib.input.FileSplit;
 import com.edu.sdu.bean.RemainOprBean;
 import com.edu.sdu.bean.Sysmbol;
 
+/**
+ * 留存用户统计的mapper
+ * @author hadoop
+ *
+ */
 public class RemainUserMapper extends Mapper<LongWritable, Text, Text, RemainOprBean> {
 
 	public void map(LongWritable ikey, Text ivalue, Context context) throws IOException, InterruptedException {

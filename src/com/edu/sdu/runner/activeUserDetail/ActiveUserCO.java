@@ -15,6 +15,11 @@ import com.edu.sdu.reducer.DetailReducer;
 import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
+/**
+ * 活跃用户 运营商统计
+ * @author 王宁
+ *
+ */
 public class ActiveUserCO {
 
 	public static void main(String[] args) {

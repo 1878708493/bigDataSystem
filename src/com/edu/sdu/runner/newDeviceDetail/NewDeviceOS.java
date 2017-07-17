@@ -16,7 +16,7 @@ import com.edu.sdu.util.Net;
 import com.edu.sdu.util.WriteJson;
 
 /**
- * 新设备 操作系统
+ * 新设备 操作系统统计
  * @author 王宁
  *
  */
